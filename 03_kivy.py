@@ -21,7 +21,7 @@ class MyGrid(GridLayout):
         self.add_widget(Label(text='Pizza'))
         self.add_widget(self.pizza)
 
-        self.btn=Button(text='Submit')
+        self.btn=Button(text='Submit',font_size=30,size_hint_y=None,height=50)
         self.btn.bind(on_press=self.press)
         self.add_widget(self.btn)
 
@@ -29,7 +29,7 @@ class MyGrid(GridLayout):
         n=self.name.text
         c=self.color.text
         p=self.pizza.text
-        self.add_widget(Label(text=f'{n},{c},{p}'))
+        self.add_widget(Label(text=f'{n},{c},{p}',font_size=30))
 
         self.name.text=''
         self.color.text=''
