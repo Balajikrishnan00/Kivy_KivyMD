@@ -23,13 +23,15 @@ class MYGrid(GridLayout):
         self.add_widget(self.Pizza)
 
         self.btn=Button(text='Submit')
-        self.btn.bind(on_press=root.press) # MYApp.press
+        #self.btn.bind(on_press=root.press) # MYApp.press
+        self.btn.bind(on_press=self.press)
         self.add_widget(self.btn)
+    def press(self,i):
+        print('Hello Kivy',i)
 
 
 class MYApp(App):
-    def press(self,i):
-        print('Hello Kivy',i)
+
 
     def build(self):
 
