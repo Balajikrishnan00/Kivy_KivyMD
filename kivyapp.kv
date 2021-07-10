@@ -1,0 +1,27 @@
+<mywidget>:
+    name:n
+    pizza:p
+    color:c
+    GridLayout:
+        size:root.width,root.height
+        cols:1
+        GridLayout:
+            cols:2
+            Label:
+                text:'name'
+            TextInput:
+                id:n
+                multiline:False
+            Label:
+                text:'pizza'
+            TextInput:
+                id:p
+                multiline:False
+            Label:
+                text:'Color'
+            TextInput:
+                id:c
+                multiline:False
+        Button:
+            text:'Submit'
+            on_press:root.press()
